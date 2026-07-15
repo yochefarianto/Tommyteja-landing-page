@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Optimization -->
+    <title>Tommy Teja | Tech-Entrepreneur & Business Educator</title>
+    <meta name="description"
+        content="Situs resmi Tommy Teja (Tech-Entrepreneur & Kreator Konten @tommythings). Pelajari strategi e-commerce, dropshipping, integrasi AI, dan automasi bisnis.">
+    <meta name="keywords"
+        content="Tommy Teja, Tommy Surya Teja Adhiraja, tommythings, bisnis fashion, edukator bisnis, dropshipping indonesia, AI tools bisnis, kelas bisnis online">
+    <meta name="author" content="Tommy Teja">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://tommyteja.id/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tommyteja.id/">
+    <meta property="og:title" content="Tommy Teja | Tech-Entrepreneur & Business Educator">
+    <meta property="og:description"
+        content="Pelajari e-commerce, dropshipping, penerapan AI, dan automasi bisnis bersama Tommy Teja.">
+    <meta property="og:image" content="tommy_portrait.png">
+    <meta property="og:site_name" content="Tommy Teja Portfolio">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:locale:alternate" content="en_US">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Tommy Teja | Tech-Entrepreneur & Business Educator">
+    <meta property="twitter:description"
+        content="Pelajari e-commerce, dropshipping, penerapan AI, dan produksi tekstil ramah lingkungan bersama Tommy Teja.">
+    <meta property="twitter:image" content="tommy_portrait.png">
+
+    <!-- Favicon (SVG base64) -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%2306080c%22/&gt;&lt;text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2255%22 fill=%22%230ee3be%22 font-family=%22system-ui, sans-serif%22 font-weight=%22bold%22&gt;T&lt;/text&gt;&lt;/svg&gt;">
+
+    <!-- Structured Data (JSON-LD) for Personal Branding -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Tommy Surya Teja Adhiraja",
+      "alternateName": "Tommy Teja",
+      "url": "https://tommyteja.id",
+      "image": "tommy_portrait.png",
+      "description": "Indonesian Entrepreneur, Co-Founder of Zando & AICO, and Business Educator focusing on E-Commerce, Dropshipping, and AI integration.",
+      "jobTitle": "Founder & Business Educator",
+      "knowsAbout": ["E-Commerce", "AI Tools for Business", "Dropshipping", "Digital Marketing"],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Zando Agency"
+      },
+      "sameAs": [
+        "https://www.instagram.com/tommyteja",
+        "https://www.tiktok.com/@tommythings"
+      ]
+    }
+    </script>
+
+    <!-- Google Fonts & FontAwesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- GSAP, ScrollTrigger & Lenis Libraries for scroll-linked animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
+
+    <link rel="stylesheet" href="index.css?v=102">
+</head>
+
+<body>
+
+    <!-- Fixed Viewport Backgrounds (Pure Classical Renaissance Style) -->
+    <div class="fixed-viewport-bg">
+        <!-- Burn Transition Overlay (used for page-to-page burn effect) -->
+        <div id="burnOverlay" class="burn-overlay"></div>
+        <!-- Paper Burn Canvas Overlay (nebula → scholar transition) -->
+        <canvas id="paperBurnCanvas" class="paper-burn-canvas"></canvas>
+        <div class="slide-bg slide-bg-hero hero-parallax-wrap" style="opacity: 1;">
+            <!-- Layer 1: Background landscape (deepest, moves slowest) -->
+            <div class="parallax-layer hero-bg-layer" data-depth="0.01"></div>
+            <!-- Layer 2: God and angels (moves medium) -->
+            <div class="parallax-layer hero-god-layer" data-depth="0.035">
+                <img src="hero_god_angels.png" alt="God & Angels" class="hero-god-img">
+            </div>
+            <!-- Layer 3: Adam (foreground, moves fastest) -->
+            <div class="parallax-layer hero-adam-layer" data-depth="0.07">
+                <img src="hero_adam.png" alt="Adam" class="hero-adam-img">
+            </div>
+            <!-- Gradient Overlay for Legibility -->
+            <div class="hero-legibility-overlay"></div>
+        </div>
+        <div class="slide-bg slide-bg-nebula nebula-parallax-wrap">
+            <!-- Layer 1: Background cosmos (deepest, moves slowest) -->
+            <div class="parallax-layer nebula-bg-layer" data-depth="0.01"></div>
+            <!-- Layer 2: Ring of floating angels (moves medium) -->
+            <div class="parallax-layer nebula-angels-layer" data-depth="0.035">
+                <img src="nebula_galaxy_angels.png?v=2" alt="Renaissance Angels" class="nebula-angels-img">
+            </div>
+            <!-- Layer 3: Sun (foreground, moves fastest + rotates) -->
+            <div class="parallax-layer nebula-sun-layer" data-depth="0.075">
+                <img src="renaissance_sun.png?v=2" alt="Renaissance Sun" class="nebula-sun" id="nebulaSun">
+            </div>
+        </div>
+        <!-- Starfield Canvas – Ventures transition background (styled in index.css) -->
+        <canvas id="starsCanvas"></canvas>
+
+        <!-- Starfield Text Overlay (glowing title overlay, styled in index.css) -->
+        <div id="starsTextOverlay">
+            What we are <em>building</em>
+        </div>
+
+        <!-- 3D Parallax Ventures Scene – 3 independent layers (hidden, kept for reference) -->
+        <div class="slide-bg slide-bg-ventures ventures-parallax-wrap" style="display:none;"></div>
+    </div>
+
+
+
+
+    <!-- Mobile Header -->
+    <header class="mobile-header">
+        <div class="mobile-header-container">
+            <a href="#home" class="mobile-logo">Tommy Teja</a>
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <!-- Language Switcher Toggle -->
+                <div class="lang-switch-toggle" id="langSwitchToggle" title="Switch Language / Ubah Bahasa">
+                    <span class="lang-option active" data-lang="en">EN</span>
+                    <span class="lang-divider">|</span>
+                    <span class="lang-option" data-lang="id">ID</span>
+                </div>
+                <div class="menu-toggle" id="menuToggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Dropdown Nav Links -->
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="active" data-translate="nav_home">Home</a></li>
+            <li><a href="#about" data-translate="nav_about">Tentang</a></li>
+            <li><a href="#news" data-translate="nav_news">Berita</a></li>
+            <li><a href="#ventures" data-translate="nav_ventures">Bisnis</a></li>
+            <li><a href="#achievements" data-translate="nav_journey">Prestasi</a></li>
+            <li><a href="#contact" data-translate="nav_contact">Kontak</a></li>
+        </ul>
+    </header>
+
+    <!-- Main Content Wrapper to offset for sidebar on desktop -->
+    <main class="main-content-wrapper">
+
+        <!-- ==========================================================================
+       2. HERO SECTION
+       ========================================================================== -->
+        <section class="hero" id="home" style="position: relative; overflow: visible;">
+            <div class="container"
+                style="position: relative; z-index: 5; height: 100%; display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start;">
+
+                <!-- Title & Menu Overlay (Directly on Background Painting at Bottom-Left) -->
+                <div class="hero-editions-card" id="heroFrameCard">
+                    <span class="hero-edition-label">PORTFOLIO RENAISSANCE</span>
+                    <h1 class="hero-editions-title" data-translate="hero_title">Tommy Teja <em>Adhiraja</em></h1>
+                    <p class="hero-editions-subtitle" data-translate="hero_subtitle">Finansial &bull; Teknologi &bull;
+                        Industri Kreatif</p>
+                    <a href="https://wa.me/628123456789" target="_blank" class="hero-contact-btn"
+                        data-translate="hero_btn_wa">
+                        <i class="fa-brands fa-whatsapp"></i> Contact Us
+                    </a>
+                    <div class="hero-editions-menu">
+                        <a href="#home" class="hero-menu-item"><span class="rom-num">I</span><span class="menu-name"
+                                data-translate="nav_home">Home</span></a>
+                        <a href="#about" class="hero-menu-item"><span class="rom-num">II</span><span class="menu-name"
+                                data-translate="nav_about">Tentang</span></a>
+                        <a href="#news" class="hero-menu-item"><span class="rom-num">III</span><span class="menu-name"
+                                data-translate="nav_news">Berita</span></a>
+                        <a href="#ventures" class="hero-menu-item"><span class="rom-num">IV</span><span
+                                class="menu-name" data-translate="nav_ventures">Bisnis</span></a>
+                        <a href="#achievements" class="hero-menu-item"><span class="rom-num">V</span><span
+                                class="menu-name" data-translate="nav_journey">Prestasi</span></a>
+                        <a href="#contact" class="hero-menu-item"><span class="rom-num">VI</span><span class="menu-name"
+                                data-translate="nav_contact">Hubungi</span></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+       3. MAIN VENTURES & PROJECTS (moved before About)
+       ========================================================================== -->
+        <style id="ventures-responsive">
+            .venture-art {
+                position: absolute;
+                height: 100vh;
+                object-fit: cover;
+                opacity: 0.8;
+                pointer-events: none;
+            }
+
+            .zando-art {
+                right: 0;
+                width: 75vw;
+                object-position: right center;
+                mask-image: linear-gradient(to right, transparent 0%, black 20%);
+                -webkit-mask-image: linear-gradient(to right, transparent 0%, black 20%);
+            }
+
+            .aico-art {
+                left: 0;
+                width: 75vw;
+                object-position: left center;
+                mask-image: linear-gradient(to left, transparent 0%, black 20%);
+                -webkit-mask-image: linear-gradient(to left, transparent 0%, black 20%);
+            }
+
+            .mecha-art {
+                right: 0;
+                width: 75vw;
+                object-position: right center;
+                transform: scaleX(-1);
+                /* Flipped horizontally: to left gradient in local coords becomes to right on screen, making the left side fade */
+                mask-image: linear-gradient(to left, transparent 0%, black 20%);
+                -webkit-mask-image: linear-gradient(to left, transparent 0%, black 20%);
+            }
+
+            @media (max-width: 900px),
+            (max-aspect-ratio: 4/5) {
+                .ventures-horizontal-panel {
+                    flex-direction: column !important;
+                    justify-content: flex-end !important;
+                    padding-bottom: 2rem !important;
+                }
+
+                .venture-art {
+                    width: 100vw !important;
+                    height: 70vh !important;
+                    top: 0 !important;
+                    left: 0 !important;
+                    right: auto !important;
+                }
+
+                .zando-art,
+                .aico-art,
+                .mecha-art {
+                    mask-image: linear-gradient(to bottom, black 60%, transparent 100%) !important;
+                    -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%) !important;
+                    object-position: center !important;
+                }
+
+                .mecha-art {
+                    transform: scaleX(-1) !important;
+                }
+
+                .ventures-content-floating {
+                    padding: 2.5rem 1.5rem !important;
+                    width: 95vw !important;
+                    margin: 0 auto !important;
+                    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.9) !important;
+                }
+
+                .venture-text-container {
+                    width: 100% !important;
+                    justify-content: center !important;
+                }
+            }
+        </style>
+        <section class="ventures-section painting-section" id="ventures"
+            style="position: relative; overflow: hidden; background: #000;">
+            <div class="ventures-horizontal-pin"
+                style="height: 100vh; width: 100vw; overflow: hidden; position: relative;">
+
+                <!-- Top Fade Transition from Black (Pinned so it stays on screen) -->
+                <div
+                    style="position: absolute; top: 0; left: 0; width: 100vw; height: 15vh; background: linear-gradient(to bottom, #000 0%, transparent 100%); z-index: 50; pointer-events: none;">
+                </div>
+
+
+                <div class="ventures-horizontal-track"
+                    style="display: flex; width: 300vw; height: 100vh; background-image: url('roman_wall_plain.png'); background-size: cover; background-position: center;">
+
+                    <!-- Panel 1: Zando Agency -->
+                    <div class="ventures-horizontal-panel"
+                        style="width: 100vw; height: 100vh; position: relative; display: flex; align-items: center; justify-content: center; flex: 0 0 100vw; overflow: hidden;">
+
+                        <img src="zando_banner.png?v=2" alt="Zando Agency" class="venture-art zando-art" loading="lazy">
+
+                        <div class="venture-text-container zando-text"
+                            style="position: relative; z-index: 5; width: 90%; max-width: 1400px; display: flex; align-items: center; justify-content: flex-start;">
+                            <div class="ventures-content-floating"
+                                style="width: 100%; max-width: 650px; text-align: left; background: #0a0a0c; border: 1px solid rgba(180, 140, 60, 0.3); padding: 4rem; border-radius: 2px; box-shadow: 20px 20px 60px rgba(0,0,0,0.9);">
+                                <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 1.5rem;">
+                                    <div
+                                        style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: rgba(180, 140, 60, 0.25); border: 1px solid rgba(180, 140, 60, 0.5); font-size: 1.2rem; color: #fff;">
+                                        <i class="fa-solid fa-store"></i>
+                                    </div>
+                                    <span
+                                        style="font-size: 1.1rem; font-weight: 500; color: rgba(255,255,255,0.9); letter-spacing: 0.05em; text-transform: uppercase;">Zando
+                                        Agency</span>
+                                </div>
+                                <h3 style="font-family: var(--font-heading); font-size: 3rem; font-weight: 500; color: #fff; line-height: 1.1; margin-bottom: 1.5rem;"
+                                    data-translate="ventures_zando_title">
+                                    Creative &amp; Social-Commerce
+                                </h3>
+                                <p style="font-size: 1.15rem; color: rgba(255,255,255,0.8); line-height: 1.6; margin-bottom: 2rem;"
+                                    data-translate="ventures_zando_desc">
+                                    Memimpin agensi ini untuk mendorong pertumbuhan eksponensial brand lokal di platform
+                                    TikTok melalui strategi live shopping, pembuatan konten viral, dan performance ads
+                                    berbasis data.
+                                </p>
+                                <div class="milestone-highlights"
+                                    style="margin-bottom: 2.5rem; display: flex; flex-wrap: wrap; gap: 0.8rem;">
+                                    <span
+                                        style="background: rgba(180, 140, 60, 0.2); border: 1px solid rgba(180, 140, 60, 0.4); padding: 0.4rem 1rem; border-radius: 99px; font-size: 0.9rem; color: #fff;"><i
+                                            class="fa-brands fa-tiktok"></i> TikTok Partner</span>
+                                    <span
+                                        style="background: rgba(180, 140, 60, 0.2); border: 1px solid rgba(180, 140, 60, 0.4); padding: 0.4rem 1rem; border-radius: 99px; font-size: 0.9rem; color: #fff;">Performance
+                                        Ads</span>
+                                </div>
+                                <a href="https://zandoagency.com/" target="_blank" class="venture-btn"
+                                    style="font-size: 1rem; font-weight: 600; display: inline-flex; align-items: center; gap: 0.6rem; color: #fff; text-decoration: none; padding: 0.8rem 1.5rem; background: rgba(255,255,255,0.1); border-radius: 999px; border: 1px solid rgba(255,255,255,0.2); transition: background 0.3s ease;"
+                                    data-translate="ventures_zando_btn">
+                                    Lihat Zando Agency <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Panel 2: AICO Community -->
+                    <div class="ventures-horizontal-panel"
+                        style="width: 100vw; height: 100vh; position: relative; display: flex; align-items: center; justify-content: center; flex: 0 0 100vw; overflow: hidden;">
+
+                        <img src="aico_banner.png?v=2" alt="AICO Community" class="venture-art aico-art" loading="lazy">
+
+                        <div class="venture-text-container aico-text"
+                            style="position: relative; z-index: 5; width: 90%; max-width: 1400px; display: flex; align-items: center; justify-content: flex-end;">
+                            <div class="ventures-content-floating"
+                                style="width: 100%; max-width: 650px; text-align: left; background: #0a0a0c; border: 1px solid rgba(180, 140, 60, 0.3); padding: 4rem; border-radius: 2px; box-shadow: -20px 20px 60px rgba(0,0,0,0.9);">
+                                <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 1.5rem;">
+                                    <div
+                                        style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: rgba(180, 140, 60, 0.25); border: 1px solid rgba(180, 140, 60, 0.5); font-size: 1.2rem; color: #fff;">
+                                        <i class="fa-solid fa-users"></i>
+                                    </div>
+                                    <span
+                                        style="font-size: 1.1rem; font-weight: 500; color: rgba(255,255,255,0.9); letter-spacing: 0.05em; text-transform: uppercase;">AICO
+                                        Community</span>
+                                </div>
+                                <h3 style="font-family: var(--font-heading); font-size: 3rem; font-weight: 500; color: #fff; line-height: 1.1; margin-bottom: 1.5rem;"
+                                    data-translate="ventures_aico_title">
+                                    Akselerasi Kecerdasan Buatan
+                                </h3>
+                                <p style="font-size: 1.15rem; color: rgba(255,255,255,0.8); line-height: 1.6; margin-bottom: 2rem;"
+                                    data-translate="ventures_aico_desc">
+                                    Komunitas edukasi AI terbesar di Indonesia untuk memberdayakan talenta lokal,
+                                    pengusaha, dan kreator agar menguasai automasi dan alat bantu generatif secara
+                                    aplikatif.
+                                </p>
+                                <div class="milestone-highlights"
+                                    style="margin-bottom: 2.5rem; display: flex; flex-wrap: wrap; gap: 0.8rem;">
+                                    <span
+                                        style="background: rgba(180, 140, 60, 0.2); border: 1px solid rgba(180, 140, 60, 0.4); padding: 0.4rem 1rem; border-radius: 99px; font-size: 0.9rem; color: #fff;">10K+
+                                        Members</span>
+                                    <span
+                                        style="background: rgba(180, 140, 60, 0.2); border: 1px solid rgba(180, 140, 60, 0.4); padding: 0.4rem 1rem; border-radius: 99px; font-size: 0.9rem; color: #fff;">AI
+                                        Voyage</span>
+                                </div>
+                                <a href="https://aico-community.com/" target="_blank" class="venture-btn"
+                                    style="font-size: 1rem; font-weight: 600; display: inline-flex; align-items: center; gap: 0.6rem; color: #fff; text-decoration: none; padding: 0.8rem 1.5rem; background: rgba(255,255,255,0.1); border-radius: 999px; border: 1px solid rgba(255,255,255,0.2); transition: background 0.3s ease;"
+                                    data-translate="ventures_aico_btn">
+                                    Lihat AICO Community <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Panel 3: MechaLens.ai -->
+                    <div class="ventures-horizontal-panel"
+                        style="width: 100vw; height: 100vh; position: relative; display: flex; align-items: center; justify-content: center; flex: 0 0 100vw; overflow: hidden;">
+
+                        <img src="mecha_banner.png?v=2" alt="MechaLens.ai" class="venture-art mecha-art" loading="lazy">
+
+                        <div class="venture-text-container mecha-text"
+                            style="position: relative; z-index: 5; width: 90%; max-width: 1400px; display: flex; align-items: center; justify-content: flex-start;">
+                            <div class="ventures-content-floating"
+                                style="width: 100%; max-width: 650px; text-align: left; background: #0a0a0c; border: 1px solid rgba(180, 140, 60, 0.3); padding: 4rem; border-radius: 2px; box-shadow: 20px 20px 60px rgba(0,0,0,0.9);">
+                                <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 1.5rem;">
+                                    <div
+                                        style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: rgba(180, 140, 60, 0.25); border: 1px solid rgba(180, 140, 60, 0.5); font-size: 1.2rem; color: #fff;">
+                                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                                    </div>
+                                    <span
+                                        style="font-size: 1.1rem; font-weight: 500; color: rgba(255,255,255,0.9); letter-spacing: 0.05em; text-transform: uppercase;">MechaLens.ai</span>
+                                </div>
+                                <h3 style="font-family: var(--font-heading); font-size: 3rem; font-weight: 500; color: #fff; line-height: 1.1; margin-bottom: 1.5rem;"
+                                    data-translate="ventures_mecha_title">
+                                    Otomatisasi Visual &amp; Prototyping
+                                </h3>
+                                <p style="font-size: 1.15rem; color: rgba(255,255,255,0.8); line-height: 1.6; margin-bottom: 2rem;"
+                                    data-translate="ventures_mecha_desc">
+                                    Platform generatif AI mutakhir untuk memberikan efisiensi tinggi bagi industri
+                                    periklanan dalam merancang aset promosi (prototyping) dengan kecepatan kilat.
+                                </p>
+                                <div class="milestone-highlights"
+                                    style="margin-bottom: 2.5rem; display: flex; flex-wrap: wrap; gap: 0.8rem;">
+                                    <span
+                                        style="background: rgba(180, 140, 60, 0.2); border: 1px solid rgba(180, 140, 60, 0.4); padding: 0.4rem 1rem; border-radius: 99px; font-size: 0.9rem; color: #fff;">Generative
+                                        AI</span>
+                                    <span
+                                        style="background: rgba(180, 140, 60, 0.2); border: 1px solid rgba(180, 140, 60, 0.4); padding: 0.4rem 1rem; border-radius: 99px; font-size: 0.9rem; color: #fff;">Fast
+                                        Prototyping</span>
+                                </div>
+                                <a href="https://mechalens.ai/" target="_blank" class="venture-btn"
+                                    style="font-size: 1rem; font-weight: 600; display: inline-flex; align-items: center; gap: 0.6rem; color: #fff; text-decoration: none; padding: 0.8rem 1.5rem; background: rgba(255,255,255,0.1); border-radius: 999px; border: 1px solid rgba(255,255,255,0.2); transition: background 0.3s ease;"
+                                    data-translate="ventures_mecha_btn">
+                                    Lihat MechaLens <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+       4. ABOUT / PROFILE SECTION
+       ========================================================================== -->
+        <section class="about" id="about" style="position: relative; overflow: hidden;">
+            <!-- 3D Parallax Scholar Scene -->
+            <div class="scholar-parallax-wrap">
+                <!-- Layer 1: Background room (deepest, moves slowest) -->
+                <div class="parallax-layer scholar-bg-layer" data-depth="0.015"></div>
+                <!-- Layer 2: Scholar figure (mid, moves medium) -->
+                <div class="parallax-layer scholar-subject-layer" data-depth="0.04">
+                    <img src="scholar_layer_subject.png" alt="Renaissance Scholar" class="scholar-subject-img" loading="lazy">
+                </div>
+                <!-- Floating Candles: 8 bare candles scattered behind scholar, varied sizes & positions -->
+                <div class="scholar-floating-candles">
+                    <img src="floating_candle.png" alt="" class="float-candle fc-1" loading="lazy" aria-hidden="true">
+                    <img src="floating_candle.png" alt="" class="float-candle fc-2" loading="lazy" aria-hidden="true">
+                    <img src="floating_candle.png" alt="" class="float-candle fc-3" loading="lazy" aria-hidden="true">
+                    <img src="floating_candle.png" alt="" class="float-candle fc-4" loading="lazy" aria-hidden="true">
+                    <img src="floating_candle.png" alt="" class="float-candle fc-5" loading="lazy" aria-hidden="true">
+                    <img src="floating_candle.png" alt="" class="float-candle fc-6" loading="lazy" aria-hidden="true">
+                    <img src="floating_candle.png" alt="" class="float-candle fc-7" loading="lazy" aria-hidden="true">
+                    <img src="floating_candle.png" alt="" class="float-candle fc-8" loading="lazy" aria-hidden="true">
+                </div>
+            </div>
+            <div class="container grid-2" style="position: relative; z-index: 5;">
+                <div class="about-text">
+                    <span class="section-label" data-translate="about_label">// SEC_01 // MENGENAL LEBIH DEKAT</span>
+                    <h2 class="editorial-title" data-translate="about_title">Kombinasi <em>Finansial</em>,
+                        <em>Teknologi</em> &amp; <em>Industri
+                            Kreatif</em>
+                    </h2>
+                    <p data-translate="about_p1">
+                        Gw membangun ekosistem adopsi AI di Indonesia untuk pelaku usaha, kreator, profesional, dan
+                        talenta
+                        muda. Sebagai <strong>Co-Founder AICO Community</strong>, gw menginisiasi program edukasi AI
+                        yang
+                        praktis, gampang dipahami, dan bisa diakses oleh siapa saja.
+                    </p>
+                    <p data-translate="about_p2">
+                        Di industri kreatif, gw memimpin <strong>Zando Agency</strong> (agensi kreatif & social-commerce
+                        berbasis AI) sebagai Co-Founder & CEO, serta ikut mengembangkan platform visual generatif AI
+                        <strong>MechaLens.ai</strong> untuk mempercepat prototyping materi visual kreatif.
+                    </p>
+                    <p data-translate="about_p3">
+                        Dengan latar belakang keuangan dan akuntansi dari <strong>The University of Melbourne</strong>,
+                        gw
+                        melihat teknologi AI secara praktis: bukan cuma sekadar tren keren, tapi sistem taktis buat
+                        ngedorong produktivitas, kolaborasi, dan eksekusi bisnis kita.
+                    </p>
+
+                    <div class="stats-grid">
+                        <div class="stat-card bento-badge" data-tilt>
+                            <span class="stat-number animate" data-target="1.9" data-suffix="M+">0</span>
+                            <span class="stat-label" data-translate="about_stat1">Pengikut Sosial</span>
+                        </div>
+                        <div class="stat-card bento-badge" data-tilt>
+                            <span class="stat-number animate" data-target="368" data-suffix="M+">0</span>
+                            <span class="stat-label" data-translate="about_stat2">Edukasi Views</span>
+                        </div>
+                        <div class="stat-card bento-badge" data-tilt>
+                            <span class="stat-number animate" data-target="340" data-suffix="+">0</span>
+                            <span class="stat-label" data-translate="about_stat3">Partner Bisnis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-quote-container">
+                    <!-- Decorative background elements -->
+                    <div class="glass-card reeded-glass bento-badge" data-tilt
+                        style="padding: 3.5rem 3rem; position: relative;">
+                        <i class="fa-solid fa-quote-left"
+                            style="font-size: 3.5rem; color: var(--color-text-secondary); opacity: 0.1; position: absolute; top: 1.5rem; left: 2rem;"></i>
+                        <p style="font-size: 1.25rem; font-family: var(--font-heading); font-style: italic; font-weight: 400; line-height: 1.5; color: var(--color-text-primary); margin-bottom: 2rem; position: relative; z-index: 1;"
+                            data-translate="about_quote">
+                            "Kunci sukses bisnis hari ini bukan cuma soal seberapa gede modal yang kamu punya, tapi
+                            seberapa cepat kamu bisa adopsi teknologi baru dan adaptasi dengan tren pasar digital."
+                        </p>
+                        <div style="display: flex; align-items: center; gap: 1rem; position: relative; z-index: 1;">
+                            <div
+                                style="width: 48px; height: 48px; border-radius: 50%; background: rgba(255, 255, 255, 0.08); display: flex; align-items: center; justify-content: center; font-weight: 500; color: var(--color-text-primary);">
+                                TT
+                            </div>
+                            <div>
+                                <h4 style="font-size: 1.05rem; font-family: var(--font-body); font-weight: 500;">Tommy
+                                    Teja
+                                </h4>
+                                <p style="font-size: 0.8rem; color: var(--color-text-secondary);">Business & Tech
+                                    Educator
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+    <!-- ==========================================================================
+       4. FEATURED PRESS & NEWS SECTION (DOMINANT)
+       ========================================================================== -->
+        <section class="news-section" id="news"
+            style="position: relative; overflow: hidden; background-color: #030306;">
+            <div class="news-bg-layer" style="background-image: url('journey_4_ground.png');"></div>
+            <div class="container" style="position: relative; z-index: 5; padding-top: 6rem; padding-bottom: 2rem;">
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <span class="section-label" data-translate="news_label">// SEC_03 // SOROTAN PUBLIKASI</span>
+                    <h2 class="editorial-title" style="margin-top: 0.5rem; text-shadow: 0 4px 15px rgba(0,0,0,0.85);"
+                        data-translate="news_title">
+                        Tommy Teja dalam <em>Berita</em></h2>
+                    <p style="margin-top: 1rem; max-width: 600px; margin-left: auto; margin-right: auto; color: var(--color-text-secondary); text-shadow: 0 2px 8px rgba(0,0,0,0.85);"
+                        data-translate="news_desc">
+                        Liputan media nasional mengenai kontribusi Tommy Teja dalam adopsi teknologi finansial dan
+                        pemberdayaan ekonomi digital nasional.
+                    </p>
+                </div>
+                <!-- Banner Block 1: Samsung Galaxy AI -->
+                <div class="news-diorama-block" id="news-diorama-1">
+                    <!-- Parallax Layers (Using generated wide banner image) -->
+                    <div class="parallax-layer news-soldiers-layer" data-depth="0.04"
+                        style="background-image: url('samsung_banner.png'); background-size: cover; background-position: right center; mix-blend-mode: screen; top: -10%; left: -5%; width: 110%; height: 120%;">
+                    </div>
+
+                    <!-- Content Container -->
+                    <div class="news-diorama-container">
+                        <div class="news-diorama-grid news-diorama-grid-left">
+                            <!-- Text Left -->
+                            <div class="news-content-floating">
+                                <div class="news-meta-row">
+                                    <span class="news-badge">Samsung Newsroom</span>
+                                    <span class="news-date"><i class="fa-regular fa-calendar"></i> Juni 2025</span>
+                                </div>
+                                <h3 class="news-title">
+                                    Galaxy AI: Rahasia Produktif Masa Kini bagi Tech-Entrepreneur Tommy Teja
+                                </h3>
+                                <p class="news-description">
+                                    Ulasan resmi Samsung mengenai integrasi Galaxy AI oleh Tommy Teja. Melalui
+                                    platformnya,
+                                    Tommy membagikan bagaimana kecerdasan buatan menyederhanakan riset pasar, penyusunan
+                                    copywriting kampanye digital, dan otomatisasi alur operasional bisnis bagi UMKM.
+                                </p>
+                                <a href="https://news.samsung.com/id/tommy-teja-galaxy-ai-bukan-cuma-canggih-jadi-rahasia-produktif-masa-kini"
+                                    target="_blank" class="news-read-more">
+                                    Baca Artikel Lengkap di Samsung Newsroom <i
+                                        class="fa-solid fa-arrow-right-long"></i>
+                                </a>
+                            </div>
+                            <!-- Empty Right -->
+                            <div class="news-grid-empty"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Banner Block 2: Info Tempo -->
+                <div class="news-diorama-block" id="news-diorama-2">
+                    <!-- Parallax Layers (Using generated wide banner image) -->
+                    <div class="parallax-layer news2-merchants-layer" data-depth="0.04"
+                        style="background-image: url('tempo_banner.png'); background-size: cover; background-position: left center; mix-blend-mode: screen; top: -10%; left: -5%; width: 110%; height: 120%;">
+                    </div>
+
+                    <!-- Content Container -->
+                    <div class="news-diorama-container">
+                        <div class="news-diorama-grid news-diorama-grid-right">
+                            <!-- Empty Left -->
+                            <div class="news-grid-empty"></div>
+                            <!-- Text Right -->
+                            <div class="news-content-floating">
+                                <div class="news-meta-row">
+                                    <span class="news-badge">Info Tempo</span>
+                                    <span class="news-date"><i class="fa-regular fa-calendar"></i> November 2024</span>
+                                </div>
+                                <h3 class="news-title">
+                                    ShopeePay Gandeng Tommy Teja Bagikan Manfaat Fitur Transfer Gratis
+                                </h3>
+                                <p class="news-description">
+                                    Liputan Tempo tentang edukasi solusi transfer gratis ShopeePay untuk memotong beban
+                                    arus
+                                    kas operasional ribuan UMKM Indonesia yang Tommy inisiasi. Melalui kerja sama ini,
+                                    ribuan UMKM terbantu dalam mengoptimalkan biaya logistik dan transaksi harian.
+                                </p>
+                                <a href="https://www.tempo.co/info-tempo/shopeepay-gandeng-tommy-teja-bagikan-manfaat-fitur-transfer-gratis--290170"
+                                    target="_blank" class="news-read-more">
+                                    Baca Artikel Lengkap di Tempo.co <i class="fa-solid fa-arrow-right-long"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- ==========================================================================
+       4.5 PROFESSIONAL JOURNEY
+       ========================================================================== -->
+        <section class="journey-section" id="journey"
+            style="position: relative; background: #000; overflow: hidden; padding-top: 6rem !important; padding-bottom: 0 !important;">
+
+            <!-- Section Header Background (Clean Sky Painting) -->
+            <div class="journey-header-bg"
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 400px; background-image: url('journey_1_sky_clean.png'); background-size: cover; background-position: center top; opacity: 0.8; z-index: 1; pointer-events: none;">
+                <!-- Bottom fade to blend with the diorama container -->
+                <div
+                    style="position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.4) 65%, #000 100%);">
+                </div>
+            </div>
+
+            <div class="container" style="text-align: center; margin-bottom: 2rem; position: relative; z-index: 10;">
+                <h2 class="section-title" style="margin-top: 0; color: #fff;" data-translate="journey_title">Rekam Jejak
+                    Profesional</h2>
+                <p style="color: rgba(255,255,255,0.7); font-size: 1.1rem;" data-translate="journey_subtitle">Sebuah
+                    perjalanan inovasi, dari langit
+                    imajinasi hingga realitas membumi.</p>
+            </div>
+
+            <div class="journey-diorama-container"
+                style="position: relative; width: 100vw; display: flex; flex-direction: column; overflow: hidden; background: transparent;">
+
+                <!-- Block 1: Sky (AICO Voyage) -->
+                <div class="journey-diorama-block">
+                    <div class="diorama-bg-layer" style="background-image: url('journey_1_sky_clean.png');"></div>
+                    <div class="parallax-layer"
+                        style="position: absolute; inset: 0; background: linear-gradient(to right, rgba(0,0,0,0.8) 0%, transparent 50%, rgba(0,0,0,0.4) 100%); z-index: 2;">
+                    </div>
+
+                    <div class="diorama-block-inner">
+                        <div class="diorama-grid align-left">
+                            <div class="news-content-floating" style="text-align: left;">
+                                <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 1.5rem;">
+                                    <span class="news-badge"
+                                        style="background: rgba(180, 140, 60, 0.35); border: 1px solid rgba(180, 140, 60, 0.5); padding: 0.35rem 0.85rem; border-radius: 12px; font-size: 0.8rem; color: #fff; letter-spacing: 0.05em; text-shadow: 0 1px 4px rgba(0,0,0,0.8);"
+                                        data-translate="journey_block1_badge">Program
+                                        Co-Organizer</span>
+                                    <span
+                                        style="font-size: 0.9rem; color: rgba(255,255,255,0.8); text-shadow: 0 2px 6px rgba(0,0,0,0.8);"><i
+                                            class="fa-regular fa-calendar"></i> 2025</span>
+                                </div>
+                                <h3 style="font-family: var(--font-heading); font-size: 2.5rem; font-weight: 500; color: #fff; line-height: 1.2; margin-bottom: 1.5rem; text-shadow: 0 4px 15px rgba(0,0,0,1);"
+                                    data-translate="journey_block1_title">
+                                    AICO Voyage China
+                                </h3>
+                                <p style="font-size: 1.2rem; color: rgba(255,255,255,0.9); line-height: 1.65; margin-bottom: 1.5rem; text-shadow: 0 3px 10px rgba(0,0,0,1);"
+                                    data-translate="journey_block1_desc">
+                                    Mengorganisasi studi ekskursi teknologi robotik dan ekosistem kecerdasan buatan di
+                                    China.
+                                </p>
+                                <div class="milestone-highlights" style="display: flex; gap: 0.8rem;">
+                                    <span
+                                        style="font-size: 0.85rem; color: #b48c3c; border: 1px solid #b48c3c; padding: 0.3rem 0.8rem; border-radius: 99px;"
+                                        data-translate="journey_block1_hl1">Studi
+                                        Ekskursi</span>
+                                    <span
+                                        style="font-size: 0.85rem; color: #b48c3c; border: 1px solid #b48c3c; padding: 0.3rem 0.8rem; border-radius: 99px;"
+                                        data-translate="journey_block1_hl2">China
+                                        AI</span>
+                                    <span
+                                        style="font-size: 0.85rem; color: #b48c3c; border: 1px solid #b48c3c; padding: 0.3rem 0.8rem; border-radius: 99px;"
+                                        data-translate="journey_block1_hl3">Robotics</span>
+                                </div>
+                            </div>
+                            <div class="journey-photo-container">
+                                <div class="journey-slideshow">
+                                    <img src="journey_photo_1_1.jpg" alt="AICO Voyage China Photo 1" class="journey-photo-placeholder" loading="lazy">
+                                    <img src="journey_photo_1_2.jpg" alt="AICO Voyage China Photo 2" class="journey-photo-placeholder" loading="lazy">
+                                    <img src="journey_photo_1_3.jpg" alt="AICO Voyage China Photo 3" class="journey-photo-placeholder" loading="lazy">
+                                </div>
+                                <div class="photo-overlay-glass"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Block 2: Mountain (Google I/O) -->
+                <div class="journey-diorama-block">
+                    <div class="diorama-bg-layer" style="background-image: url('journey_2_mountain_clean.png');"></div>
+                    <div class="parallax-layer"
+                        style="position: absolute; inset: 0; background: linear-gradient(to left, rgba(0,0,0,0.8) 0%, transparent 50%, rgba(0,0,0,0.4) 100%); z-index: 2;">
+                    </div>
+
+                    <div class="diorama-block-inner">
+                        <div class="diorama-grid align-right">
+                            <div class="journey-photo-container">
+                                <div class="journey-slideshow">
+                                    <img src="journey_photo_2_1.jpg" alt="Google I/O Photo 1" class="journey-photo-placeholder" loading="lazy">
+                                    <img src="journey_photo_2_2.jpg" alt="Google I/O Photo 2" class="journey-photo-placeholder" loading="lazy">
+                                    <img src="journey_photo_2_3.jpg" alt="Google I/O Photo 3" class="journey-photo-placeholder" loading="lazy">
+                                </div>
+                                <div class="photo-overlay-glass"></div>
+                            </div>
+                            <div class="news-content-floating" style="text-align: right;">
+                                <div
+                                    style="display: flex; gap: 1rem; align-items: center; justify-content: flex-end; margin-bottom: 1.5rem;">
+                                    <span class="news-badge"
+                                        style="background: rgba(180, 140, 60, 0.35); border: 1px solid rgba(180, 140, 60, 0.5); padding: 0.35rem 0.85rem; border-radius: 12px; font-size: 0.8rem; color: #fff; letter-spacing: 0.05em; text-shadow: 0 1px 4px rgba(0,0,0,0.8);"
+                                        data-translate="journey_block2_badge">Invited
+                                        Creator</span>
+                                    <span
+                                        style="font-size: 0.9rem; color: rgba(255,255,255,0.8); text-shadow: 0 2px 6px rgba(0,0,0,0.8);"><i
+                                            class="fa-regular fa-calendar"></i> 2026</span>
+                                </div>
+                                <h3 style="font-family: var(--font-heading); font-size: 2.5rem; font-weight: 500; color: #fff; line-height: 1.2; margin-bottom: 1.5rem; text-shadow: 0 4px 15px rgba(0,0,0,1);"
+                                    data-translate="journey_block2_title">
+                                    Google I/O Watch Party | Singapura
+                                </h3>
+                                <p style="font-size: 1.2rem; color: rgba(255,255,255,0.9); line-height: 1.65; margin-bottom: 1.5rem; text-shadow: 0 3px 10px rgba(0,0,0,1);"
+                                    data-translate="journey_block2_desc">
+                                    Liputan eksklusif peluncuran inovasi teknologi AI terbaru Google untuk pasar
+                                    Indonesia.
+                                </p>
+                                <div class="milestone-highlights"
+                                    style="display: flex; gap: 0.8rem; justify-content: flex-end;">
+                                    <span
+                                        style="font-size: 0.85rem; color: #b48c3c; border: 1px solid #b48c3c; padding: 0.3rem 0.8rem; border-radius: 99px;"
+                                        data-translate="journey_block2_hl1">Google
+                                        I/O</span>
+                                    <span
+                                        style="font-size: 0.85rem; color: #b48c3c; border: 1px solid #b48c3c; padding: 0.3rem 0.8rem; border-radius: 99px;"
+                                        data-translate="journey_block2_hl2">Google
+                                        AI</span>
+                                    <span
+                                        style="font-size: 0.85rem; color: #b48c3c; border: 1px solid #b48c3c; padding: 0.3rem 0.8rem; border-radius: 99px;"
+                                        data-translate="journey_block2_hl3">Singapore</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Block 3: Land (Bank Mandiri) -->
+                <div class="journey-diorama-block">
+                    <div class="diorama-bg-layer" style="background-image: url('journey_3_land_clean.png');"></div>
+                    <div class="parallax-layer"
+                        style="position: absolute; inset: 0; background: linear-gradient(to right, rgba(0,0,0,0.8) 0%, transparent 50%, rgba(0,0,0,0.4) 100%); z-index: 2;">
+                    </div>
+
+                    <div class="diorama-block-inner">
+                        <div class="diorama-grid align-left">
+                            <div class="news-content-floating" style="text-align: left;">
+                                <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 1.5rem;">
+                                    <span class="news-badge"
+                                        style="background: rgba(180, 140, 60, 0.35); border: 1px solid rgba(180, 140, 60, 0.5); padding: 0.35rem 0.85rem; border-radius: 12px; font-size: 0.8rem; color: #fff; letter-spacing: 0.05em; text-shadow: 0 1px 4px rgba(0,0,0,0.8);"
+                                        data-translate="journey_block3_badge">Workshop
+                                        Trainer</span>
+                                    <span
+                                        style="font-size: 0.9rem; color: rgba(255,255,255,0.8); text-shadow: 0 2px 6px rgba(0,0,0,0.8);"><i
+                                            class="fa-regular fa-calendar"></i> 2026</span>
+                                </div>
+                                <h3 style="font-family: var(--font-heading); font-size: 2.5rem; font-weight: 500; color: #fff; line-height: 1.2; margin-bottom: 1.5rem; text-shadow: 0 4px 15px rgba(0,0,0,1);"
+                                    data-translate="journey_block3_title">
+                                    Bank Mandiri &amp; Danantara | Hong Kong
+                                </h3>
+                                <p style="font-size: 1.2rem; color: rgba(255,255,255,0.9); line-height: 1.65; margin-bottom: 1.5rem; text-shadow: 0 3px 10px rgba(0,0,0,1);"
+                                    data-translate="journey_block3_desc">
+                                    Pelatihan pemanfaatan AI generatif untuk wirausaha mandiri pekerja migran Indonesia
+                                    di Grand Hyatt Hong Kong.
+                                </p>
+                                <div class="milestone-highlights" style="display: flex; gap: 0.8rem;">
+                                    <span
+                                        style="font-size: 0.85rem; color: #b48c3c; border: 1px solid #b48c3c; padding: 0.3rem 0.8rem; border-radius: 99px;"
+                                        data-translate="journey_block3_hl1">Bank
+                                        Mandiri</span>
+                                    <span
+                                        style="font-size: 0.85rem; color: #b48c3c; border: 1px solid #b48c3c; padding: 0.3rem 0.8rem; border-radius: 99px;"
+                                        data-translate="journey_block3_hl2">Danantara</span>
+                                    <span
+                                        style="font-size: 0.85rem; color: #b48c3c; border: 1px solid #b48c3c; padding: 0.3rem 0.8rem; border-radius: 99px;"
+                                        data-translate="journey_block3_hl3">Hong
+                                        Kong</span>
+                                </div>
+                            </div>
+                            <div class="journey-photo-container phone-frame-container">
+                                <div class="phone-mockup-frame">
+                                    <div class="phone-speaker-notch"></div>
+                                    <div class="phone-video-slideshow">
+                                        <video class="phone-video-player" autoplay loop muted playsinline poster="journey_photo_3.jpg">
+                                            <source src="journey_video_3_1.mp4" type="video/mp4">
+                                        </video>
+                                        <video class="phone-video-player" autoplay loop muted playsinline>
+                                            <source src="journey_video_3_2.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                    <div class="phone-glass-reflection"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Block 4: Ground (Sydney) -->
+                <div class="journey-diorama-block no-border">
+                    <div class="diorama-bg-layer" style="background-image: url('journey_4_ground_clean.png');"></div>
+                    <div class="parallax-layer"
+                        style="position: absolute; inset: 0; background: linear-gradient(to left, rgba(0,0,0,0.8) 0%, transparent 50%, rgba(0,0,0,0.4) 100%); z-index: 2;">
+                    </div>
+                    <!-- Bottom fade overlay to blend with the contact section -->
+                    <div
+                        style="position: absolute; bottom: 0; left: 0; width: 100%; height: 100px; background: linear-gradient(to bottom, transparent, #000); z-index: 3; pointer-events: none;">
+                    </div>
+
+                    <div class="diorama-block-inner">
+                        <div class="diorama-grid align-right">
+                            <div class="journey-photo-container">
+                                <div class="journey-slideshow">
+                                    <img src="journey_photo_4_1.jpg" alt="AI: The Next Chapter Photo 1" class="journey-photo-placeholder" loading="lazy">
+                                    <img src="journey_photo_4_2.jpg" alt="AI: The Next Chapter Photo 2" class="journey-photo-placeholder" loading="lazy">
+                                    <img src="journey_photo_4_3.jpg" alt="AI: The Next Chapter Photo 3" class="journey-photo-placeholder" loading="lazy">
+                                </div>
+                                <div class="photo-overlay-glass"></div>
+                            </div>
+                            <div class="news-content-floating" style="text-align: right;">
+                                <div
+                                    style="display: flex; gap: 1rem; align-items: center; justify-content: flex-end; margin-bottom: 1.5rem;">
+                                    <span class="news-badge"
+                                        style="background: rgba(180, 140, 60, 0.35); border: 1px solid rgba(180, 140, 60, 0.5); padding: 0.35rem 0.85rem; border-radius: 12px; font-size: 0.8rem; color: #fff; letter-spacing: 0.05em; text-shadow: 0 1px 4px rgba(0,0,0,0.8);"
+                                        data-translate="journey_block4_badge">Invited
+                                        Speaker & Host</span>
+                                    <span
+                                        style="font-size: 0.9rem; color: rgba(255,255,255,0.8); text-shadow: 0 2px 6px rgba(0,0,0,0.8);"><i
+                                            class="fa-regular fa-calendar"></i> 2026</span>
+                                </div>
+                                <h3 style="font-family: var(--font-heading); font-size: 2.5rem; font-weight: 500; color: #fff; line-height: 1.2; margin-bottom: 1.5rem; text-shadow: 0 4px 15px rgba(0,0,0,1);"
+                                    data-translate="journey_block4_title">
+                                    AI: The Next Chapter | Sydney
+                                </h3>
+                                <p style="font-size: 1.2rem; color: rgba(255,255,255,0.9); line-height: 1.65; margin-bottom: 1.5rem; text-shadow: 0 3px 10px rgba(0,0,0,1);"
+                                    data-translate="journey_block4_desc">
+                                    Diskusi lanskap teknologi dan talenta masa depan bersama Macquarie University,
+                                    Australia.
+                                </p>
+                                <div class="milestone-highlights"
+                                    style="display: flex; gap: 0.8rem; justify-content: flex-end;">
+                                    <span
+                                        style="font-size: 0.85rem; color: #b48c3c; border: 1px solid #b48c3c; padding: 0.3rem 0.8rem; border-radius: 99px;"
+                                        data-translate="journey_block4_hl1">Macquarie
+                                        Univ</span>
+                                    <span
+                                        style="font-size: 0.85rem; color: #b48c3c; border: 1px solid #b48c3c; padding: 0.3rem 0.8rem; border-radius: 99px;"
+                                        data-translate="journey_block4_hl2">AIFI</span>
+                                    <span
+                                        style="font-size: 0.85rem; color: #b48c3c; border: 1px solid #b48c3c; padding: 0.3rem 0.8rem; border-radius: 99px;"
+                                        data-translate="journey_block4_hl3">Cross-Border</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+       7. SOCIAL LINKS & CONTACT FORM SECTION
+       ========================================================================== -->
+        <section class="contact painting-section" id="contact"
+            style="position: relative; overflow: visible; background-image: url('bg_contact.png'); background-attachment: fixed; background-size: cover; background-position: right top;">
+            <div class="container" style="position: relative; z-index: 5;">
+                <div class="contact-card">
+                    <div class="contact-center-layout" style="text-align: center; max-width: 800px; margin: 0 auto;">
+                        <span class="section-label" data-translate="contact_label">// SEC_05 // HUBUNGI GW</span>
+                        <h2 class="editorial-title" data-translate="contact_title">Yuk, <em>Terkoneksi!</em></h2>
+                        <p style="margin-bottom: 3rem; line-height: 1.7;" data-translate="contact_desc">
+                            Mau diskusi bisnis, undang gw jadi pembicara workshop/webinar, or kolaborasi bareng? Kontak
+                            gw
+                            langsung lewat platform di bawah ini ya!
+                        </p>
+
+                        <div class="contact-cards-wrapper">
+                            <!-- WhatsApp -->
+                            <a href="https://wa.me/628123456789" target="_blank"
+                                class="bio-link-card bio-whatsapp bento-badge" data-tilt style="margin-bottom: 0;">
+                                <div class="bio-link-card-content">
+                                    <div class="bio-link-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                                    <div class="bio-link-text" style="text-align: left;">
+                                        <h4>WhatsApp</h4>
+                                        <p data-translate="contact_wa_sub">Hubungi via Chat</p>
+                                    </div>
+                                </div>
+                                <div class="bio-link-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                            </a>
+
+                            <!-- Email -->
+                            <a href="mailto:contact@tommyteja.com" target="_blank"
+                                class="bio-link-card bio-email bento-badge" data-tilt style="margin-bottom: 0;">
+                                <div class="bio-link-card-content">
+                                    <div class="bio-link-icon"><i class="fa-solid fa-envelope"></i></div>
+                                    <div class="bio-link-text" style="text-align: left;">
+                                        <h4>Email</h4>
+                                        <p data-translate="contact_email_sub">Kirim Inquiry</p>
+                                    </div>
+                                </div>
+                                <div class="bio-link-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                            </a>
+
+                            <!-- LinkedIn -->
+                            <a href="https://www.linkedin.com/in/tommyteja" target="_blank"
+                                class="bio-link-card bio-linkedin bento-badge" data-tilt style="margin-bottom: 0;">
+                                <div class="bio-link-card-content">
+                                    <div class="bio-link-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                                    <div class="bio-link-text" style="text-align: left;">
+                                        <h4>LinkedIn</h4>
+                                        <p data-translate="contact_linkedin_sub">Koneksi Profesional</p>
+                                    </div>
+                                </div>
+                                <div class="bio-link-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================================
+       8. FOOTER
+       ========================================================================== -->
+        <footer>
+            <div class="container" style="position: relative; z-index: 5;">
+                <div class="footer-grid">
+                    <div class="footer-info">
+                        <a href="#home" class="logo" style="margin-bottom: 1rem;">Tommy Teja</a>
+                        <p>Inovasi bisnis melalui integrasi teknologi digital, pemikiran analitis finansial, dan
+                            keberlanjutan lingkungan hidup.</p>
+                    </div>
+
+                    <div class="footer-socials">
+                        <a href="https://www.tiktok.com/@tommythings?is_from_webapp=1&sender_device=pc" target="_blank"
+                            class="footer-social-link" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://www.instagram.com/tommyteja" target="_blank" class="footer-social-link"
+                            aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://youtube.com/@tommy.things?si=PLnBTsqSVA3BCyKX" target="_blank"
+                            class="footer-social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.threads.com/@tommyteja" target="_blank" class="footer-social-link"
+                            aria-label="Threads"><i class="fa-brands fa-threads"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Tommy Teja. All rights reserved.</p>
+                    <div class="footer-nav">
+                        <a href="#home">Home</a>
+                        <a href="#about">Tentang</a>
+                        <a href="#ventures">Bisnis</a>
+                        <a href="#achievements">Riwayat</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Tilt-Shift Viewport Blur Vignettes -->
+    <div class="tilt-shift-overlay tilt-shift-top"></div>
+    <div class="tilt-shift-overlay tilt-shift-bottom"></div>
+
+    <!-- Custom Script -->
+    <script src="index.js?v=102"></script>
+</body>
+
+</html>
+<!-- Force refresh -->

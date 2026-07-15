@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body, html { margin: 0; padding: 0; background: #000; overflow: hidden; }
+        video { width: 100vw; height: 100vh; object-fit: contain; }
+    </style>
+</head>
+<body>
+    <video id="vid" src="../Screen Recording 2026-07-08 at 12.20.39.mov" muted controls></video>
+    <script>
+        const vid = document.getElementById('vid');
+        window.playVideo = () => { vid.play(); };
+        window.seekVideo = (time) => { vid.currentTime = time; };
+        window.pauseVideo = () => { vid.pause(); };
+    </script>
+</body>
+</html>
